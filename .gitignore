@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.eggs/
+.pytest_cache/
+.pyc
+venv/
+env/
+.venv/
+ENV/
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+
+# Backup folder (moved un-numbered files)
+Leetcode_non_numbered_backup/
+
+# Byte-compiled / cache
+*.pyc
+
+# Others
+.env
