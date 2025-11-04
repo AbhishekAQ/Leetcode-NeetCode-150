@@ -21,4 +21,24 @@ Constraints:
 1 <= nums.length <= 10^5
 -10^9 <= nums[i] <= 10^9
 """
+from typing import List
 # Solution goes below
+class Solution:
+    # solution 1
+    def containsDuplicate(self, nums: List[int]) -> bool:
+        seen  = set()
+        for num in nums:
+            if num in seen:
+                return True
+            seen.add(num)
+        return False
+    # solution 2 optimized and faster
+    def containsDuplicate(self, nums: List[int]) -> bool:
+        return len(set(nums))!=len(nums)
+
+# testing
+if __name__ == "__main__":
+    sol = Solution()
+    print(sol.containsDuplicate([1,2,3,1]))  # Output: True
+    print(sol.containsDuplicate([1,2,3,4]))  # Output: False
+    print(sol.containsDuplicate([1,1,1,3,3,4,3,2,4,2]))  # Output: True
