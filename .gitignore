@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+venv/
+env/
+.venv/
+.vscode/
+.idea/
+.DS_Store
+.env
+
+# local tooling, not part of the repo
+CLAUDE.md
+.claude/
